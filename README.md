@@ -28,3 +28,11 @@ git commit -am "changes ya"
     * `themes/static` includes the CSS/JS.
 * Go to `content` to change the actual content.
 * `output` is where `pelican` outputs to.
+
+## Notes on Pelican
+1. You can create arbitrary metadata for files. They *have* to follow the same format as the predefined ones.
+2. The variables in Jinja2 is lower cased:
+
+For example, if you have the metadata `CoverImage`, you have to access it as `article.coverimage`. Spaces do not work, so I use `Cover_Image` instead (which I access as `article.cover_image`)
+
+3. By default, the articles are sorted by date (with most recent being first). I rely on that for the main page.
