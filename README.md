@@ -13,6 +13,8 @@
 pelican content
 ```
 
+NOTE: You have to delete the old HTML of your deleted blog posts manually.
+
 ## How to Push to Github Pages
 ```
 # I added a post-commit git hook that runs ghp-import, so after committing...
