@@ -1,0 +1,175 @@
+/*
+The theme I'm going for is day vs night, hot vs cold, 
+formal experience vs personal projects.
+*/
+
+// I like custom highlighting colors
+::selection{color: #FFFFFF; background: #007fb2}
+::-moz-selection{color:#FFFFFF;background: #007fb2}/*for mozilla firefox*/
+
+// if the dates don't fit on the line, move it to a new line
+small
+{
+	display: inline-block;
+}
+
+html, body
+{
+	height: 100%;
+	width: 100%;
+	margin: 0px;
+	font-size: 16px;
+	line-height: 24px;
+	font-family: 'Source Sans Pro', sans-serif;	
+}
+
+h1, h2, h3, h4, h5, h6
+{
+	margin-top: 0px; // disable the margin top so the header lines up with the pictures
+	font-family: 'Source Serif Pro', serif;
+	padding-bottom: 0.2em;
+}
+
+li
+{
+	margin: 0px;
+	padding: 0px;
+}
+
+.container-fluid
+{
+	padding: 0px;
+}
+
+.jumbotron
+{
+	color: white;
+	background-color: #5CD185;
+	padding: 100pt 35pt;
+	margin: 0px;
+	height: 70%;
+}
+
+.nav-tabs
+{
+	height: 10%;
+	padding: 0px;
+}
+// for the formal experience one
+/*
+.nav > li > a:focus, .nav > li > a:hover
+{
+	color: black;
+	background-color: #ffe100;
+}
+
+
+// override the default Bootstrap hover color
+.nav > .projects > a:focus, .nav > .projects > a:hover
+{
+	color: white;
+	background-color: #007fb2;
+}
+
+.nav-tabs > li.projects.active > a, .nav-tabs > li.projects.active > a:focus, .nav-tabs > li.projects.active > a:hover
+{
+	color: white;
+	background-color: black;
+	border: 0px;
+}
+.projects
+{
+	color: white;
+	background-color: black;
+}
+
+.projects:hover
+{
+	background-color: #007fb2;
+}
+
+.projects > a:hover
+{
+	color: white;
+	background-color: #007fb2;
+}
+
+#projects
+{
+	color: white;
+	background-color: black;
+}
+
+#projects > .row > div > h2 > small
+{
+	color: #ddd;
+}
+*/
+// why the fuck does row in container-fluid cause horizontal overflow?
+// (by default .row has margin-left/margin-right of 15px)
+.row
+{
+	margin-left: 0px;
+	margin-right: 0px;
+	padding: 3% 10%;
+}
+
+/*
+For styling the fontawesome icons
+*/
+.fa
+{
+	border-radius: 5px;
+	font-size: 24px;
+	width: 35px;
+	padding: 5px;
+	text-align: center;
+	text-decoration: none;
+	color: white;
+}
+
+
+.fa-envelope:hover
+{
+	background: #ff4343;
+	color: white;
+}
+
+.fa-linkedin:hover
+{
+  background: #007bb5;
+  color: white;
+}
+
+.fa-github:hover
+{
+	background: white;
+	color: black;
+}
+
+footer
+{
+	background-color: #000;
+	padding-top: 140px !important;
+	border-radius: 50%;
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+
+}
+
+.footer-icons
+{
+	padding: 30pt 55pt;
+	height: 100%;
+}
+
+.footer-icons:before
+{
+	color: white;
+	content: "You can find me on other sites";
+}
+
+footer > .row
+{
+	padding: 0px;
+}
